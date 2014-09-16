@@ -1,0 +1,5 @@
+textarea, button { display: block; }
+textarea { width: 500px; }
+
+.success { color: green; }
+.failure { color: red; }
