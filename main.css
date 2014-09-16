@@ -1,5 +1,6 @@
-textarea, button { display: block; }
+input, textarea, button { display: block; }
 textarea { width: 500px; }
+select { min-width: 500px; }
 
 .success { color: green; }
 .failure { color: red; }

@@ -2,11 +2,25 @@
   <head>
     <title>Wordhide</title>
     <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="lodash.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-    <form>
+    <h1>Wordhide</h1>
+    <div id="manage-passages">
+      <select id="passages" size="10"></select>
+      <button id="practice-passage-button">Practice Passage</button>
+      <button id="add-passage-button">Add Passage</button>
+    </div>
+    <form class="hidden" id="add-passage-form" style="display: none;">
+      <label for="new-passage-reference">Reference</label>
+      <input type="text" id="new-passage-reference" name="passage_reference" />
+      <label for="new-passage-text">Text</label>
+      <textarea id="new-passage-text" name="passage_text"></textarea>
+      <button class="hidden" id="save-passage-button">Save Passage</button>
+    </form>
+    <form id="practice-form" style="display: none;">
       <label for="source">Source</label>
       <textarea id="source" rows="4"></textarea>
       <button id="toggle-source">Hide Source</button>
